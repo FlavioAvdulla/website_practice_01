@@ -24,12 +24,12 @@
 
 /* Custom Scroll Bar */
 
-::-moz-scrollbar {
+::-webkit-scrollbar {
 	width: 0.3rem;
 	background:var(--light-green-color);
 }
 
-::-moz-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
 	width: 0.3rem;
 	background: var(--green-color);
 	border-radius: 5rem;
@@ -952,19 +952,6 @@ header {
 		grid-template-columns: repeat(auto-fit, minmax(12rem, auto));
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Open Hand Cursor */
 .swiper-wrapper {
