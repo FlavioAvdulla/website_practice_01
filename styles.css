@@ -118,20 +118,20 @@ header {
 
 .navbar .home-active {
 	background: var(--green-color);
-	border-radius: 5rem;
 	color: var(--bg-color);
 	border: 2px solid;
 	border-color: #3cb815;
 	transition: 0.3s ease-in-out;
+	border-radius: 5rem;
 }
 
 .navbar .home-active:hover {
 	background: transparent;
-	border-radius: 5rem;
 	color: var(--green-color);
 	border: 2px solid;
 	border-color: #3cb815;
 	transition: 0.3s ease-in-out;
+	border-radius: 5rem;
 }
 
 #menu-icon {
@@ -774,10 +774,15 @@ header {
 
 /* Shigjeta tek emaili */
 .footer-box form .bx {
+	cursor: pointer;
+}
+
+.footer-box form .bx-right-arrow-alt {
 	font-size: 20px;
 	color: var(--light-orange-color);
 	cursor: pointer;
 }
+
 .email {
 	margin-left: 20px;
 }
@@ -875,9 +880,14 @@ header {
 		margin: 1rem;
 		display: block;
 	}
+
+	.home-active_02 {
+		border-radius: 5rem;
+
+	}
 	.navbar a:hover,
 	.navbar .home-active {
-		border-radius: 0.5rem;
+		border-radius: 5rem;
 		color: var(--bg-color);
 	}
 	.navbar.active {
@@ -900,9 +910,8 @@ header {
 }
 /* =============================================================== */
 @media (max-width: 712px) {
-
 	#menu-icon {
-		padding-left: 200px;
+		display: initial;
 	}
 	
 	.container img {
