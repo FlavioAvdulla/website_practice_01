@@ -179,71 +179,6 @@ header {
 	margin-bottom: 1rem;
 	color: var(--bg-color);
 }
-
-/* SHOP NOW BUTTON */
-.btn {
-	padding: 0.6rem 1rem;
-	border: 1px solid;
-	color: var(--bg-color);
-	font-weight: 400;
-	border-radius: 5rem;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	column-gap: 0.5rem;
-	max-width: 160px;
-}
-
-.btn .bx {
-	padding: 4px;
-	background: var(--bg-color);
-	color: var(--green-color);
-	font-size: 20px;
-	border-radius: 50%;
-}
-
-.btn:hover {
-	background: #8eba15;
-	transition: 0.3s ease-in-out;
-}
-/* SHOP NOW BUTTON */
-/* WHITE BUTTON */
-.btn_02 {
-	padding: 0.6rem 1rem;
-	border: 1px solid;
-	color: var(--green-color);
-	font-weight: 400;
-	border-radius: 5rem;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	column-gap: 0.5rem;
-	max-width: 160px;
-}
-
-.btn_02 .bx {
-	padding: 4px;
-	background: var(--bg-color);
-	color: var(--green-color);
-	font-size: 20px;
-	border-radius: 50%;
-}
-
-.btn_02:hover {
-	padding: 0.6rem 1rem;
-	border: 1px solid;
-	color: var(--bg-color);
-	background-color: var(--green-color);
-	font-weight: 400;
-	border-radius: 5rem;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	column-gap: 0.5rem;
-	max-width: 160px;
-	transition: 0.3s ease-in-out;
-}
-/* WHITE BUTTON */
 /* SLIDE 2 */
 
 .container__02 {
@@ -257,13 +192,6 @@ header {
 	background-size: cover;
 	background-position: center;
 	overflow: hidden;
-}
-
-.container__02 img {
-	width: 400px;
-	position: absolute;
-	bottom: -500px;
-	right: 200px;
 }
 
 .home-text__02 {
@@ -374,6 +302,71 @@ header {
 	background: #ff4e57;
 	transition: 0.3s ease-in-out;
 }
+
+/* SHOP NOW BUTTON */
+.btn {
+	padding: 0.6rem 1rem;
+	border: 1px solid;
+	color: var(--bg-color);
+	font-weight: 400;
+	border-radius: 5rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	column-gap: 0.5rem;
+	max-width: 160px;
+}
+
+.btn .bx {
+	padding: 4px;
+	background: var(--bg-color);
+	color: var(--green-color);
+	font-size: 20px;
+	border-radius: 50%;
+}
+
+.btn:hover {
+	background: #8eba15;
+	transition: 0.3s ease-in-out;
+}
+/* SHOP NOW BUTTON */
+/* WHITE BUTTON */
+.btn_02 {
+	padding: 0.6rem 1rem;
+	border: 1px solid;
+	color: var(--green-color);
+	font-weight: 400;
+	border-radius: 5rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	column-gap: 0.5rem;
+	max-width: 160px;
+}
+
+.btn_02 .bx {
+	padding: 4px;
+	background: var(--bg-color);
+	color: var(--green-color);
+	font-size: 20px;
+	border-radius: 50%;
+}
+
+.btn_02:hover {
+	padding: 0.6rem 1rem;
+	border: 1px solid;
+	color: var(--bg-color);
+	background-color: var(--green-color);
+	font-weight: 400;
+	border-radius: 5rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	column-gap: 0.5rem;
+	max-width: 160px;
+	transition: 0.3s ease-in-out;
+}
+/* WHITE BUTTON */
 
 .swiper-button-next {
 	background: url(images/arrow_slides_right.svg);
@@ -801,7 +794,7 @@ header {
 @media (max-width: 1200px) {
 	
 	.categories,
-	.container,
+	/* .container, */
 	.about,
 	.customers,
 	.footer-out {
@@ -818,6 +811,15 @@ header {
         padding: 100px 100px;
     }
 
+	.home-text h1,
+	.home-text__02 h1,
+	.home-text__03 h1 {
+	font-size: 2rem;
+	font-weight: 700;
+	margin-bottom: 1rem;
+	color: var(--bg-color);
+	}
+
 	.container img,
 	.container__02 img,
 	.container__03 img{
@@ -827,11 +829,13 @@ header {
 /* =============================================================== */
 @media (max-width: 768px) {
 
-	header {
-		padding: 18px 4%;
+	.categories,
+	/* .container, */
+	.about,
+	.customers,
+	.footer-out {
+		padding: 50px 4%;
 	}
-
-	
 
 	.home-text h1 {
 		font-size: 2rem;
@@ -847,11 +851,21 @@ header {
     .container__02 img,
     .container__03 img {
         width: 250px;
+		height: auto;
     }
 
 	.swiper-button-next,
 	.swiper-button-prev {
 		margin: 0;
+	}
+	.home-text {
+		padding: 130px 70px;
+	}
+	.home-text__02 {
+		padding: 130px 70px;
+	}
+	.home-text__03 {
+		padding: 130px 70px;
 	}
 }
 /* =============================================================== */
@@ -896,10 +910,12 @@ header {
 	.home-text h1 {
 		font-size: 1.7rem;
 	}
-	.container img {
-		width: 390px;
-		max-width: 400px;
-	}
+	.container img,
+    .container__02 img,
+    .container__03 img {
+        width: 250px;
+		height: auto;
+    }
 	.btn {
 		padding: 0.6rem 1.2rem;
 		max-width: 164px;
@@ -914,9 +930,12 @@ header {
 		display: initial;
 	}
 	
-	.container img {
-		right: 20px;
-	}
+	.container img,
+    .container__02 img,
+    .container__03 img {
+        width: 250px;
+		height: auto;
+    }
 	.heading h1 {
 		font-size: 1.2rem;
 	}
