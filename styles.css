@@ -99,6 +99,7 @@ header {
 .navbar {
 	display: flex;
 	column-gap: 0.5rem;
+	transition: 0.3s ease-in-out;
 }
 
 .navbar a {
@@ -106,6 +107,7 @@ header {
 	font-weight: 500;
 	color: var(--text-color);
 	padding: 0.5rem 1rem;
+	transition: 0.3s ease-in-out;
 }
 
 .navbar a:hover,
@@ -113,7 +115,6 @@ header {
 	background: var(--green-color);
 	border-radius: 5rem;
 	color: var(--bg-color);
-	transition: 0.3s ease-in-out;
 }
 
 .navbar .home-active {
@@ -130,7 +131,6 @@ header {
 	color: var(--green-color);
 	border: 2px solid;
 	border-color: #3cb815;
-	transition: 0.3s ease-in-out;
 	border-radius: 5rem;
 }
 
@@ -223,6 +223,7 @@ header {
 	justify-content: space-between;
 	column-gap: 0.5rem;
 	max-width: 160px;
+	transition: 0.3s ease-in-out;
 }
 
 .btn__02 .bx {
@@ -235,7 +236,6 @@ header {
 
 .btn__02:hover {
 	background: #ff4e57;
-	transition: 0.3s ease-in-out;
 }
 /* SLIDE 3 */
 
@@ -288,6 +288,7 @@ header {
 	justify-content: space-between;
 	column-gap: 0.5rem;
 	max-width: 160px;
+	transition: 0.3s ease-in-out;
 }
 
 .btn__03 .bx {
@@ -300,7 +301,6 @@ header {
 
 .btn__03:hover {
 	background: #ff9700;
-	transition: 0.3s ease-in-out;
 }
 
 /* SHOP NOW BUTTON */
@@ -315,6 +315,7 @@ header {
 	justify-content: space-between;
 	column-gap: 0.5rem;
 	max-width: 160px;
+	transition: 0.3s ease-in-out;
 }
 
 .btn .bx {
@@ -327,7 +328,6 @@ header {
 
 .btn:hover {
 	background: #8eba15;
-	transition: 0.3s ease-in-out;
 }
 /* SHOP NOW BUTTON */
 /* WHITE BUTTON */
@@ -342,6 +342,7 @@ header {
 	justify-content: space-between;
 	column-gap: 0.5rem;
 	max-width: 160px;
+	transition: 0.3s ease-in-out;
 }
 
 .btn_02 .bx {
@@ -364,7 +365,6 @@ header {
 	justify-content: space-between;
 	column-gap: 0.5rem;
 	max-width: 160px;
-	transition: 0.3s ease-in-out;
 }
 /* WHITE BUTTON */
 
@@ -463,11 +463,11 @@ header {
 	position: absolute;
 	bottom: -8%;
 	cursor: pointer;
+	transition: 0.3s ease-in-out;
 }
 
 .categories-container .box .bx:hover {
 	scale: 130%;
-	transition: 0.3s ease-in-out;
 }
 
 .categories-container .box:hover .bx {
@@ -558,11 +558,11 @@ header {
 	border-radius: 0.5rem 0 0.4rem 0;
 	color: var(--bg-color);
 	cursor: pointer;
+	transition: 0.3s ease-in-out;
 }
 
 .products-container .box .bx-cart-alt:hover {
 	background: var(--orange-color);
-	transition: 0.2s all linear;
 }
 
 .products-container .box .bx-heart {
@@ -636,6 +636,7 @@ header {
 	border: 1px solid;
 	border-color: #3cb815;
 	border-bottom: 9px solid var(--green-color);
+	transition: 0.3s ease-in-out;
 }
 
 .customers-container .box:hover {
@@ -644,7 +645,6 @@ header {
 	border: 1px solid;
 	border-color: #3cb815;
 	scale: 102%;
-	transition: 0.3s ease-in-out;
 }
 
 .customers-container .box .bx {
@@ -704,19 +704,19 @@ header {
 
 .footer-box a {
 	color: var(--text-color);
+	transition: 0.3s ease-in-out;
 }
 
 .footer-box a:hover {
 	color: #868a92;
-	transition: 0.3s ease-in-out;
 }
 /*========================================SHPORTA ICON */
 .footer-box .bxs-basket {
 	color: var(--orange-color);
+	transition: 0.3s ease-in-out;
 }
 .footer-box .bxs-basket:hover {
 	color: #ffa850;
-	transition: 0.3s ease-in-out;
 }
 /*========================================SHPORTA ICON */
 
@@ -729,6 +729,7 @@ header {
 	display: flex;
 	align-items: center;
 	column-gap: 0.5rem;
+	
 }
 
 .social .bx {
@@ -737,12 +738,12 @@ header {
 	color: var(--green-color);
 	border-radius: 5rem;
 	font-size: 20px;
+	transition: 0.6s ease-in-out;
 }
 
 .social .bx:hover {
 	background: var(--green-color);
 	color: var(--bg-color);
-	transition: 0.6s ease-in-out;
 	rotate: 360deg;
 }
 
